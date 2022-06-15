@@ -16,6 +16,7 @@ const server = express();
 
 
 //Query Params = nome=Nodejs
+//localhost:3000/teste?nome=JavaScript
 // server.get("/teste", (req, res) => {
 //   const nome = req.query.nome;
 
@@ -27,6 +28,7 @@ const server = express();
 
 
 //Route Params = /teste/2
+//localhost:3000/teste/2
 server.get("/teste:id", (req, res) => {
   const id = req.params.id;
 
