@@ -3,11 +3,11 @@ const server = express();
 
 server.use(express.json());
 const cursos = ["Node Js", "Java Script", "React Native"];
+
 server.use((req, res, next)=>{
   console.log(`Url Chamada: ${req.url}`);
   return next();
 });
-
 
 //Funções
 //--------------------------------------
